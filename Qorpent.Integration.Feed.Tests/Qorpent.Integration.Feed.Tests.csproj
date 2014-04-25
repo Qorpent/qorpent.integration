@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IsTest>True</IsTest>
+    <Configuration>Debug</Configuration>
+    <ProjectGuid>{D8D42867-46F0-4F0B-8A58-6FA47F7D1A2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Qorpent.Integration.Feed.Tests</RootNamespace>
+    <AssemblyName>Qorpent.Integration.Feed.Tests</AssemblyName>
+    <AssemblyNameBase>Qorpent.Integration.Feed</AssemblyNameBase>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="*.import" />
+    <None Include="*.export" />
+    <EmbeddedResource Include=".\**\*.*resource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\mongo-csharp-driver\MongoDB.Bson\MongoDB.Bson.csproj">
+      <Project>{0e9a3a2a-49cd-4f6c-847c-dc79b4b65ce6}</Project>
+      <Name>MongoDB.Bson</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mongo-csharp-driver\MongoDB.Driver\MongoDB.Driver.csproj">
+      <Project>{ae5166cd-76b0-4911-bd80-ced9521f37a1}</Project>
+      <Name>MongoDB.Driver</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mailman\MailmanMessageTest.cs" />
+    <Compile Include="Mailman\MailmanSendFromBsonDocTests.cs" />
+  </ItemGroup>
+  <Import Project="..\..\qorpent.kernel\build.targets" />
+</Project>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration>Debug</Configuration>
+    <ProjectGuid>{6E377C34-83F1-41C2-8AD2-5146E19768D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Qorpent.Integration.Wiki</RootNamespace>
+    <AssemblyName>Qorpent.Integration.Wiki</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="*.import" />
+    <None Include="*.export" />
+    <EmbeddedResource Include=".\**\*.*resource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UI\Default.html" />
+    <Content Include="UI\Scripts\WikiEngine.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\GetWikiPageAction.cs" />
+    <Compile Include="Actions\WikiActionBase.cs" />
+    <Compile Include="WikiGeneralProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\qorpent.sys\Qorpent.Core\Qorpent.Core.csproj">
+      <Project>{880f65ea-1a22-4672-a137-ffc91290a209}</Project>
+      <Name>Qorpent.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\qorpent.sys\Qorpent.IoC\Qorpent.IoC.csproj">
+      <Project>{62f22ffa-a1cf-4a74-838c-9ab33a9442ea}</Project>
+      <Name>Qorpent.IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\qorpent.sys\Qorpent.Mvc\Qorpent.Mvc.csproj">
+      <Project>{96885c8f-ad20-41b4-86ee-bc9b3d47d9f9}</Project>
+      <Name>Qorpent.Mvc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\qorpent.sys\Qorpent.Utils\Qorpent.Utils.csproj">
+      <Project>{880f65ea-1a22-4672-a137-ffc912902112}</Project>
+      <Name>Qorpent.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\..\qorpent.kernel\build.targets" />
+</Project>

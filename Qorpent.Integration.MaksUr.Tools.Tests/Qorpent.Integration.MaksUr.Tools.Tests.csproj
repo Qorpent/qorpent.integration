@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IsTest>True</IsTest>
+    <Configuration>Debug</Configuration>
+    <ProjectGuid>{43367C58-37BA-444E-8DB8-0EF7033680CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Qorpent.Integration.MaksUr.Tools.Tests</RootNamespace>
+    <AssemblyName>Qorpent.Integration.MaksUr.Tools.Tests</AssemblyName>
+    <AssemblyNameBase>Qorpent.Integration.MaksUr.Tools</AssemblyNameBase>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="*.import" />
+    <None Include="*.export" />
+    <EmbeddedResource Include=".\**\*.*resource" />
+  </ItemGroup>
+  <Import Project="..\..\qorpent.kernel\build.targets" />
+</Project>

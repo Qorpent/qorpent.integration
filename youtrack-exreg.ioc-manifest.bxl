@@ -1,0 +1,3 @@
+qxi::include log.ioc-template
+erytconnection Server='${Server}'
+youtrackexreg 

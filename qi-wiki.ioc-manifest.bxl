@@ -1,0 +1,22 @@
+﻿ref Qorpent.Core
+ref Qorpent.Integration.Wiki
+ref Qorpent.Integration.MongoDB
+
+using Qorpent.Wiki
+using Qorpent.Integration.Wiki
+using Qorpent.Integration.Wiki.Actions
+using Qorpent.Integration.MongoDB
+using Qorpent.Integration.MongoDB.Wiki
+
+mvc Qorpent.Integration.Wiki
+
+define MONGODB_CONNECTION_STRING : "mongodb://localhost"
+define MONGODB_WIKI_DB : Wiki
+
+transient "wiki.mongo.persister"  MongoDbWikiPersister : IWikiPersister
+	ConnectionString = @MONGODB_CONNECTION_STRING
+	DatabaseName = @MONGODB_WIKI_DB
+	CollectionName = "main"
+
+transient "wiki.general.provider"  WikiGeneralProvider : IWikiGeneralProvider
+	WikiEngineIocName = "wiki.mongo.persister"

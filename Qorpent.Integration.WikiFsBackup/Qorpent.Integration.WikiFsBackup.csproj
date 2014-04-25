@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration>Debug</Configuration>
+    <ProjectGuid>{9DC29DE9-6D9F-41C7-AC64-319B185AF0EC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Qorpent.Integration.WikiFsBackup</RootNamespace>
+    <AssemblyName>wfb</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="*.import" />
+    <None Include="*.export" />
+    <EmbeddedResource Include=".\**\*.*resource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="WikiFsBackupMaster.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\mongo-csharp-driver\MongoDB.Bson\MongoDB.Bson.csproj">
+      <Project>{0e9a3a2a-49cd-4f6c-847c-dc79b4b65ce6}</Project>
+      <Name>MongoDB.Bson</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mongo-csharp-driver\MongoDB.Driver\MongoDB.Driver.csproj">
+      <Project>{ae5166cd-76b0-4911-bd80-ced9521f37a1}</Project>
+      <Name>MongoDB.Driver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\qorpent.sys\Qorpent.Core\Qorpent.Core.csproj">
+      <Project>{880F65EA-1A22-4672-A137-FFC91290A209}</Project>
+      <Name>Qorpent.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\qorpent.sys\Qorpent.Utils\Qorpent.Utils.csproj">
+      <Project>{880F65EA-1A22-4672-A137-FFC912902112}</Project>
+      <Name>Qorpent.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Qorpent.Integration.MongoDB\Qorpent.Integration.MongoDB.csproj">
+      <Project>{31ce132d-bfe7-443e-b68c-8c05f0751bc5}</Project>
+      <Name>Qorpent.Integration.MongoDB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="..\..\qorpent.kernel\build.targets" />
+</Project>

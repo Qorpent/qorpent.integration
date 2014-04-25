@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Choose>
+    <When Condition="'$(NoProjRef)'=='True' and '$(Configuration)' != 'Release'  and Exists('$(AllBinPath)\qorpent.integration.FusionChart.dll')">
+      <ItemGroup>
+        <Reference Include="qorpent.integration.FusionChart">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>$(AllBinPath)\qorpent.integration.FusionChart.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <When Condition="'$(NoProjRef)'=='True' and '$(Configuration)' == 'Release' ">
+      <ItemGroup>
+        <Reference Include="qorpent.integration.FusionChart">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>$(AllReleasePath)\qorpent.integration.FusionChart.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <ProjectReference Include="..\..\qorpent.integration\qorpent.integration.FusionChart\qorpent.integration.FusionChart.csproj">
+          <Name>qorpent.integration.FusionChart</Name>
+        </ProjectReference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+</Project>

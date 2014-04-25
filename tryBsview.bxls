@@ -1,0 +1,29 @@
+class viewcode abstract prototype=basview inherits=ViewBase
+	using System
+	dynamic _ : context.viewdata
+	string sum ( int x, int y ) : (
+		return DateTime.Now.ToString("dd.MM.yyyy hh:mm");
+	)
+
+class viewrender abstract prototype=viewrender
+
+class reportmixin abstract
+	import viewrender
+	int level : 1
+	string reportname : "Отчет не указан"
+	
+	
+class simpleview inherits = viewcode
+	import reportmixin
+	IEnumerable<string> items : null
+	bool usename : false
+	bool usecode : false
+	int a : 1
+	int b : 2
+	tag "h~{level}" : "~{_.reportname}"
+	tag "h~{level+1}" : "~{sum(a,b)}"
+	table class = data
+		th class = code if="~{usecode}" : Код
+			
+				
+		

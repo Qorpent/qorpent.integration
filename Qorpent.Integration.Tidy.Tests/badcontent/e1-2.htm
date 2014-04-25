@@ -1,0 +1,1110 @@
+﻿<!DOCTYPE HTML>
+<html>
+   <head>
+      <base href="http://mstrok.ru">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="alternate" type="application/rss+xml" title="Между строк" href="http://mstrok.ru/rss">
+      <link rel="icon" href="./img/logo.gif" type="image/gif" />
+      <!--[if IE]>
+      <script>
+         document.createElement('header');
+         document.createElement('nav');
+         document.createElement('section');
+         document.createElement('article');
+         document.createElement('aside');
+         document.createElement('footer');
+      </script>
+       <![endif]-->
+      <script type="text/javascript" src="//vk.com/js/api/openapi.js?82"></script>
+      <script type="text/javascript">
+         VK.init({apiId: 3486785, onlyWidgets: true});
+      </script>
+      <!--[if lt IE 9]><script src="/js/css3-mediaqueries.js"></script><![endif]-->
+      <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+      <title>Новости Нижнего Тагила - АН "Между Строк"</title>
+      <link href="css/mane_style.css" rel="stylesheet" type="text/css">
+      <link href="css/media_queries.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+         .pagination a {text-decoration: underline;} /*подчеркивание ссылок*/
+         .pagination a:hover {color: white; background: #3399cc;} /*при наведении*/
+         .pagination .ditto_currentpage {padding: 1px 3px; margin: 2px; } /*оформление текущей страницы*/
+         .pagination .ditto_previous_link, .pagination .ditto_next_link{padding: 2px} /*«далее» и «назад»*/
+         .pagination .ditto_page{ padding: 2px 5px;}/* отступы для номеров страниц*/
+      </style>
+      <script src="./js/jquery-1.4.4.min.js" type="text/javascript"></script>
+      <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+      <!--CSS-->
+<link rel="stylesheet" href="http://mstrok.ru/js/colorbox-master/example2/colorbox.css" />
+<!--JS-->
+<script src="http://mstrok.ru/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="http://mstrok.ru/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="http://mstrok.ru/js/colorbox-master/jquery.colorbox-min.js" type="text/javascript"></script>
+<script src="http://mstrok.ru/js/colorbox-master/i18n/jquery.colorbox-ru.js" type="text/javascript"></script>
+<script type="text/javascript">
+ jQuery(function ($) {
+	var maincl = $('.mainmenu div.list');
+ 	
+	maincl.hover(
+ 		function () {
+ 		$(this).stop().animate({
+ 			'opacity' : .5,															
+ 		})
+ 	},
+ 		function () {
+ 		$(this).stop().animate({
+ 			'opacity' : 1
+ 		})
+ 	});
+	
+	//Дабавим класс картикам
+	$("img.pic, .picavt>img, .pic>img, .txt>img").addClass('thumbnail');
+	//Вспыливающие картинки в статьях
+		
+			$("article img").each(function(){
+				var imgW = $(this).width();
+				var imgSrc = $(this).attr("src");																											
+				if(imgW>300){																											
+				
+					$(this).colorbox({rel:'gal',href:imgSrc}).css('cursor','pointer');
+				} else {
+					return false;
+				}																																					
+			});
+ });
+</script>
+
+   </head>
+   <body>
+      <div class="wrapper">
+      <div id="top_banner">
+    <a href="#"><img src="img/1.gif" alt=""/></a>
+</div>
+      <!--top_banner-->
+      <header>
+         <div id="logo">
+            <div class="inner">
+               Агентство новостей
+               <a href="/"><img src="img/logo.gif" width="180" height="61" alt="Агентство новостей между строк"></a>
+            </div>
+         </div>
+         <!--logo-->
+			<div class="right">
+            <nav class="mainmenu">
+               <div class="mobyle">
+                  <div class="list" id="menu1"><a href="?id=1">Новости</a></div>
+                  <div class="list" id="menu4"><a href="?id=4">Видео</a></div>
+                  <div class="list" id="menu5"><a href="?id=5">Интервью</a></div>
+               </div>
+               <div class="mobyle">
+                  <div class="list" id="menu6"><a href="?id=6">Авторские колонки</a></div>
+                  <div class="list" id="menu7"><a href="?id=7">Доска почета</a></div>
+               </div>
+               <div class="clear"></div>
+       </nav>
+</div>
+         <script type="text/javascript">
+            var getId = 1;
+            var pgId = "1";
+            var paId = "0";
+            if(pgId != "1" && pgId != "3" && paId == "0") getId = pgId;
+            else if(paId != "0" && paId != "3") getId = paId;
+            var menuId = document.getElementById("menu" + getId);
+            menuId.className = "active list";
+         </script>
+         <div class="bottom">
+            <div id="login" class="mobilehidden">
+               <div class="clear"></div>
+            </div>
+            <!--login-->
+            <div class="clear noclear"></div>
+            <form action="" method="get" id="searcform" style="margin: 0px !important">
+   <input type="hidden" name="id" value="2388">
+   <input name="search" type="text" onfocus="this.value=(this.value=='Поиск по сайту..')? '' : this.value ;" placeholder="Поиск по сайту...">
+   <div class="icon"></div>
+   <!--<input name="" type="submit" class="icon">-->
+   <div class="clear"></div>
+</form>
+            <div class="clear"></div>
+         </div>
+         <div class="clear"></div>
+      </header>    
+<aside id="lside">
+    <div class="color">
+        <div class="inner">
+                  <div class="video">
+<object wmode="opaque">
+<param name="movie" value="http://www.youtube.com/v/isw41GaL0pc?fs=1&hl=ru_RU"></param>
+<param name="allowFullScreen" value="true"></param>
+<param name="allowscriptaccess" value="always"></param>
+<embed src="http://www.youtube.com/v/isw41GaL0pc?fs=1&hl=ru_RU" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque"></embed>
+</object>
+
+                <span class="date"><time datetime="10.Янв.14 11:59">10.Янв.14 11:59</span>
+                <a href="?id=2497">От Натуси до Натальи. Из Тагила в Питер </a>
+            </div><!--video-->          <div class="video">
+<object wmode="opaque">
+<param name="movie" value="http://www.youtube.com/v/E65t0iPMe5k?fs=1&hl=ru_RU"></param>
+<param name="allowFullScreen" value="true"></param>
+<param name="allowscriptaccess" value="always"></param>
+<embed src="http://www.youtube.com/v/E65t0iPMe5k?fs=1&hl=ru_RU" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque"></embed>
+</object>
+
+                <span class="date"><time datetime="09.Янв.14 10:38">09.Янв.14 10:38</span>
+                <a href="?id=2480">Пассажиры не обратили внимания на пожарную тревогу в аэропорту «Кольцово»</a>
+            </div><!--video-->
+
+<br>
+     <div class="wijet mb_1_65 banner">
+    
+    </div>
+ <!--wijet-->
+<h3> Авторские колонки</h3>
+	<a href="?id=6">Все записи</a> | <a href="http://mstrok.ru/268">Список Авторов</a><br><br>
+
+<article id="sensatija" class="pic mb_1_65">
+    	<div class="picavt"><img src="assets/images/Faces/18.jpg"></div>
+        <div class="txt">
+            <div class="sis">
+                <div class="clear"></div>
+            </div><!--sis-->
+            <div class="subtitle"><a href="?id=2490">Что это было?</a></div>
+            <div class="subtitle mb_1">авторская колонка Евгения Ройзмана - главы Фонда "Город без наркотиков"</div>
+            
+            <p class="more"><a href="?id=2490">Читать далее</a></p>
+        </div><!--txt-->
+        <div class="clear"></div>
+</article><!--sinsatija--><article id="sensatija" class="pic mb_1_65">
+    	<div class="picavt"><img src="assets/images/Faces/75.jpg"></div>
+        <div class="txt">
+            <div class="sis">
+                <div class="clear"></div>
+            </div><!--sis-->
+            <div class="subtitle"><a href="?id=2485">Политическое</a></div>
+            <div class="subtitle mb_1">авторская колонка диакона Андрея Кураева</div>
+            
+            <p class="more"><a href="?id=2485">Читать далее</a></p>
+        </div><!--txt-->
+        <div class="clear"></div>
+</article><!--sinsatija-->
+<br>
+<div style="background:#fff;" id="hypercomments_mix"></div>
+<script type="text/javascript">
+_hcwp = window._hcwp || [];
+_hcwp.push({widget:"Mixstream", widget_id: 8246, template: "index", filter:"all",limit:5 ,default_filter:"last"});
+(function() {
+if("HC_LOAD_INIT" in window)return;
+HC_LOAD_INIT = true;
+var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage ||  "en").substr(0, 2).toLowerCase();
+var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/8246/"+lang+"/widget.js";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hcc, s.nextSibling);
+})();
+</script>
+<br>
+<div style="background:#fff;width:100%;">
+   <script type="text/javascript" src="//vk.com/js/api/openapi.js?95"></script>
+   <!-- VK Widget -->
+   <div style="width:100%;" id="vk_groups"></div>
+   <script type="text/javascript">
+      VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "300", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 50583910);
+   </script>
+   <br><br>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=180023028852410";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="fb-like-box" data-href="https://www.facebook.com/mstrok.ru" data-width="100%" data-height="320" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
+	<br><br>
+	<div id="ok_group_widget" style="width:100%;"></div>
+   <script>
+      !function (d, id, did, st) {
+        var js = d.createElement("script");
+        js.src = "http://connect.ok.ru/connect.js";
+        js.onload = js.onreadystatechange = function () {
+        if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+          if (!this.executed) {
+            this.executed = true;
+            setTimeout(function () {
+              OK.CONNECT.insertGroupWidget(id,did,st);
+            }, 0);
+          }
+        }}
+        d.documentElement.appendChild(js);
+      }(document,"ok_group_widget","52813397819646","{width:'100%',height:160}");
+   </script>
+</div>
+
+        </div><!--inner-->
+    </div><!--color-->   
+</aside>
+
+<div id="center"><!--центральная часть и правый сайдбар-->
+<section id="content"><table style="width: 100%;" border="0">
+<tbody>
+<tr>
+<td style="width: 50%;" valign="top"><img style="float: left; margin: 5px;" src="assets/images/new_year/god/326.jpg" alt="" width="133" height="100" />
+<div class="title">
+<div class="title">
+<div class="title">
+<div class="title">
+<div class="title">
+<div class="title"><a href="?id=2471" target="_blank">2013 год в фотографиях. Самые яркие моменты</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td style="width: 50%;" valign="top"><a href="?id=1579" target="_blank"></a><img style="float: left; margin: 5px;" src="assets/images/Once/1174.jpg" alt="" width="200" height="98" />
+<div class="title">
+<div class="title">
+<div class="title">
+<div class="title">
+<div class="title">
+<div class="title"><a href="?id=2489">Тагильский Weekend.&nbsp;<span style="line-height: 1.5;">О том, чем заняться в выходные</span></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="title">
+<div class="title">
+<div class="title">
+<div class="title">
+<div class="title">
+<div class="title">
+</div>
+</div>
+</div>
+</div>
+<a href="?id=2215">
+</a></div>
+<a href="?id=2215">
+</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<article id="sensatija" class="pic mb_1_65">
+    	<div class="pic"><img src="assets/images/Often/16.jpg"></div>
+        <div class="txt">
+            <div class="sis">
+            	<span class="date"><time datetime="11.Янв.14 12:26">11.Янв.14 12:26</span>
+                <div class="clear"></div>
+            </div><!--sis-->
+            <div class="title"><a href="?id=2500">Тагильчане стали жертвами коммунальщиков</a></div>
+            <div class="subtitle mb_1">Управляющая компания незаконно зарабатывала на опломбировании счетчиков </div>
+            
+            <p class="more"><a href="?id=2500">Читать далее</a></p><br>
+            Метки: <a href='?id=16&tags=ЖКХ'>ЖКХ</a><br>
+        </div><!--txt-->
+        <div class="clear"></div>
+</article><!--sinsatija-->
+<table style="width: 100%;" border="0">
+<tbody>
+<tr>
+<td style="width: 50%;" valign="top"><a href="?id=1579" target="_blank"></a><img style="float: left; margin: 5px;" src="assets/images/afisha/240.jpg" alt="" width="133" height="100" />
+<div class="title"><a href="?id=2465" target="_blank">Где сверкает зимний лед, чтобы бегать взад-вперед? Обзор катков Нижнего Тагила
+</a></div>
+</td>
+<td style="width: 50%;" colspan="2" valign="top"><img style="float: left; margin: 5px;" src="assets/images/Often/130.jpg" alt="" width="142" height="100" />
+<div class="title">
+<div class="title">
+<div class="title"><a href="?id=2476">Администрация города &ndash; злостный неплательщик коммунальных услуг.&nbsp;<span style="line-height: 1.5;">Неожиданный поворот в борьбе за качественное ЖКХ</a></span></div>
+</div>
+</div>
+<br />
+<div class="title">
+<div class="title">
+<div class="title">
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="subtitle mb_1">
+</div>
+
+<!--content_banner-->
+<div class="content_banner">
+    <a href="/"><img src="img/novaya.jpg" alt="" /></a></div>
+<div class="content_banner"></div>
+<div class="content_banner">
+</div>
+
+<article class="dalynews">
+    	<div class="chislo">11 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2499">«Территория захламлена отходами»</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Нарушения на Верхнесалдинском металлургическом заводе оценили в 100 тысяч рублей<br>
+                <p></p>
+Метки: <a href='?id=16&tags=экология'>экология</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">10 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2498">Куйвашев начал проводить встречи с министрами</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Первые на очереди главы минздрава и минкульта<br>
+                <p></p>
+Метки: <a href='?id=16&tags=культура'>культура</a>, <a href='?id=16&tags=общество'>общество</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">10 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2495">От Натуси до Натальи. Из Тагила в Питер </a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Маленькая певица, согревавшая  сердца тагильчан в 90-е, покоряет город на Неве<br>
+                <p></p>
+Метки: <a href='?id=16&tags=культура'>культура</a>, <a href='?id=16&tags=общество'>общество</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">10 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2493">Пункт приема подарков – новое слово в борьбе с коррупцией</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Российское правительство утвердило правила дарения для госслужащих<br>
+                <p></p>
+Метки: <a href='?id=16&tags=общество'>общество</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">10 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2492">250 000 из бюджета на ремонт автомобиля тагильских полицейских</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div> Служебная Toyota Avensis попала в ДТП<br>
+                <p></p>
+Метки: <a href='?id=16&tags=происшествия'>происшествия</a>, <a href='?id=16&tags=транспорт'>транспорт</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">10 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2491">В области появится станция космического мониторинга</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Мониторить происходящее будут на 10% территории страны<br>
+                <p></p>
+Метки: <a href='?id=16&tags=общество'>общество</a>, <a href='?id=16&tags=безопасность'>безопасность</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">10 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2489">Тагильский Weekend</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>О том, чем заняться в выходные<br>
+                <p></p>
+Метки: <a href='?id=16&tags=ТагильскийWeekend'>ТагильскийWeekend</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">09 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2488">Новомодные триместры способствуют здоровью детей</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>С момента эксперимента прошло полгода: как привыкают школьники<br>
+                <p></p>
+Метки: <a href='?id=16&tags=дети'>дети</a>, <a href='?id=16&tags=школы'>школы</a>, <a href='?id=16&tags=образование'>образование</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">09 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2487">В дни новогодних каникул тагильские полицейские стали Дедами Морозами  </a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Сотрудники правоохранительных органов вручили подарки нуждающимся детям<br>
+                <p></p>
+Метки: <a href='?id=16&tags=дети'>дети</a>, <a href='?id=16&tags=благотворительность'>благотворительность</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">09 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2486">В Новый год обошлось почти без коммунальных аварий</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Министерство энергетики и ЖКХ отчиталось о работе<br>
+                <p></p>
+Метки: <a href='?id=16&tags=происшествия'>происшествия</a>, <a href='?id=16&tags=ЖКХ'>ЖКХ</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">09 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2484">Без «ню», но с фотомоделями. Фотофакт</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Разглядываем корпоративный календарь УБТ-УВЗ<br>
+                <p></p>
+Метки: <a href='?id=16&tags=УВЗ'>УВЗ</a>, <a href='?id=16&tags=общество'>общество</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">09 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2483">Хорошо отдохнули!</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Новогодних преступлений стало больше, чем в прошлом году<br>
+                <p></p>
+Метки: <a href='?id=16&tags=общество'>общество</a>, <a href='?id=16&tags=происшествия'>происшествия</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">09 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2482">Пять региональных министров остались на своих местах</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Одного освободили от должности<br>
+                <p></p>
+Метки: <a href='?id=16&tags=политика'>политика</a>, <a href='?id=16&tags=общество'>общество</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">09 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2481">С вокзала снова эвакуировали людей</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Кто-то оставил подозрительный пакет<br>
+                <p></p>
+Метки: <a href='?id=16&tags=происшествия'>происшествия</a>, <a href='?id=16&tags=безопасность'>безопасность</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">09 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2478">Когда оживают игрушки</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Как из кусочка ткани, мотка пряжи и нескольких бусин сделать чудо<br>
+                <p></p>
+Метки: <a href='?id=16&tags=дети'>дети</a>, <a href='?id=16&tags=общество'>общество</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">09 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2477">В новогоднюю ночь уральцы проговорили 95 миллионов минут</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Рекорд абонентов «Мегафона»<br>
+                <p></p>
+Метки: <a href='?id=16&tags=общество'>общество</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">09 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2476">Администрация города – злостный неплательщик коммунальных услуг</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Неожиданный поворот в борьбе за качественное ЖКХ<br>
+                <p></p>
+Метки: <a href='?id=16&tags=ЖКХ'>ЖКХ</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">08 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2474">Тагил не для слабонервных</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Подборка самых жутких случаев в городе за 2013 год<br>
+                <p></p>
+Метки: <a href='?id=16&tags=происшествия'>происшествия</a>, <a href='?id=16&tags=общество'>общество</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">08 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2473">От ксенофобских преступлений в области погибли два человека</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Еще четверо пострадали<br>
+                <p></p>
+Метки: <a href='?id=16&tags=происшествия'>происшествия</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">08 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2472">В случае ЧП жертв не избежать? (ВИДЕО)</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Пассажиры не обратили внимания на пожарную тревогу в аэропорту «Кольцово»<br>
+                <p></p>
+Метки: <a href='?id=16&tags=общество'>общество</a>, <a href='?id=16&tags=происшествия'>происшествия</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">07 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2471">2013 год в фотографиях</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Самые яркие моменты<br>
+                <p></p>
+Метки: <a href='?id=16&tags=общество'>общество</a>, <a href='?id=16&tags=культура'>культура</a>, <a href='?id=16&tags=дороги'>дороги</a>, <a href='?id=16&tags=Главагорода'>Главагорода</a>, <a href='?id=16&tags=политика'>политика</a>, <a href='?id=16&tags=происшествия'>происшествия</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">07 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2470">События, которые нас удивили</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Новый рейтинг от АН «Между строк» по итогам прошедшего года<br>
+                <p></p>
+Метки: <a href='?id=16&tags=общество'>общество</a>, <a href='?id=16&tags=СМИ'>СМИ</a>, <a href='?id=16&tags=политика'>политика</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">06 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2469">Вечная память…</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>В прошлом году ушли из жизни несколько известных тагильчан <br>
+                <p></p>
+Метки: <a href='?id=16&tags=общество'>общество</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">06 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2468">Заяц и волк-коммунисты поздравили с Новым годом более 600 человек </a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Герои советских мультфильмов на протяжении двух дней веселили тагильчан<br>
+                <p></p>
+Метки: <a href='?id=16&tags=общество'>общество</a>, <a href='?id=16&tags=политика'>политика</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">06 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2467">Только победа, и ничего лишнего</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Редакция АН «Между строк» еще раз поздравляет тагильчан, которыми гордится город<br>
+                <p></p>
+Метки: <a href='?id=16&tags=общество'>общество</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">05 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2466">2013 год в лицах</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Кто и чем запомнился нам в прошлом году?<br>
+                <p></p>
+Метки: <a href='?id=16&tags=общество'>общество</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">05 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2465">Где сверкает зимний лед, чтобы бегать взад-вперед?</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Обзор катков Нижнего Тагила <br>
+                <p></p>
+Метки: <a href='?id=16&tags=общество'>общество</a>, <a href='?id=16&tags=дети'>дети</a>, <a href='?id=16&tags=семья'>семья</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">05 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2464">«Лики любви» на сцене Драматического театра</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Артисты Василий Саргин и Иза Высоцкая рассказали о главном словами классиков<br>
+                <p></p>
+Метки: <a href='?id=16&tags=театр'>театр</a>, <a href='?id=16&tags=культура'>культура</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">04 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2462">В Нижнем Тагиле произошел настоящий триллер</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>Несколько месяцев понадобилось на то, чтобы поймать его «создателей»<br>
+                <p></p>
+Метки: <a href='?id=16&tags=происшествия'>происшествия</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article><article class="dalynews">
+    	<div class="chislo">04 Январь</div>
+        <div class="txt">
+        	<div class="inner">
+            	<div class="title">
+                    <a href="?id=2461">Со снежных гор к игральному столу (ФОТО)</a>
+                    <div class="pictograms">
+                       
+                    </div><!--pictograms-->
+                    <div class="clear"></div>
+                </div>В центре Тагила открылась игротека<br>
+                <p></p>
+Метки: <a href='?id=16&tags=культура'>культура</a>, <a href='?id=16&tags=дети'>дети</a>, <a href='?id=16&tags=семья'>семья</a>, <a href='?id=16&tags=общество'>общество</a>
+            </div><!--inner-->
+        </div><!--txt-->
+        <div class="clear"></div>
+    </article>
+<!--<div class="pagination">Страницы: </div>-->
+<div class="pagination">Страницы: <span class="ditto_currentpage">1</span><a class="ditto_page" href='/1?start=30'>2</a><a class="ditto_page" href='/1?start=60'>3</a><a class="ditto_page" href='/1?start=90'>4</a><a class="ditto_page" href='/1?start=120'>5</a><a class="ditto_page" href='/1?start=150'>6</a><a class="ditto_page" href='/1?start=180'>7</a><a class="ditto_page" href='/1?start=210'>8</a><a class="ditto_page" href='/1?start=240'>9</a><a class="ditto_page" href='/1?start=270'>10</a><a class="ditto_page" href='/1?start=300'>11</a><a class="ditto_page" href='/1?start=330'>12</a>...<a class="ditto_page" href='/1?start=1560'>53</a><a class="ditto_page" href='/1?start=1590'>54</a><a href='/1?start=30' class='ditto_next_link'>далее &gt;</a></div>
+
+
+
+</section><!--content-->
+<aside id="rside">
+<!--    <form action="" method="get" id="searcform" class="wijet mb_1_65">
+    <input name="" type="text" placeholder="Поиск по сайту">
+    <div class="icon"></div>
+    <div class="clear"></div>
+    </form>-->
+   <!-- <div class="wijet mb_1_65 banner mobilehidden">
+    	<a href="#"><img src="img/zaglushka.jpg"></a>
+    </div> --!>
+
+<!--wijet--> 
+    <div class="wijet mb_1_65 banner mobilehidden">
+<object width="240" height="400" data="New_Year_shkoda.swf" type="application/x-shockwave-flash">
+<param name="data" value="New_Year_shkoda.swf" />
+<param name="src" value="New_Year_shkoda.swf" />
+</object>
+</div>
+<div class="wijet banner mb_1_65">
+<style>.adss img:hover{opacity:0.8;}</style>
+<table style="width: 100%;" border="0" cellspacing="2" class="adss" align="left">
+<tbody>
+<tr>
+<td colspan="2"><a href="?id=20"><img style="display: block; max-width: 100%; height: auto;" src="img/addnews.png" alt="" width="100%" /></a></td>
+</tr>
+<tr>
+<td><a href="?id=2448"><img style="display: block; max-width: 100%; height: auto;" src="img/sub_email.png" alt="" width="100%" /></a></td>
+<td><a href="rss" target="_blank"><img style="display: block; max-width: 100%; height: auto;" src="img/sub_rss.png" alt="" width="100%" /></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<div class="wijet mb_1_65">
+		<div class="inner">
+        	<h3><a href="/209">Задай вопрос</a></h3>
+            <div class="txt">
+            	<img src="assets/images/Faces/84.jpg" height="102" >
+            	<div class="title"><a href="?id=1567">Епископ Иннокентий ответил на все вопросы наших читателей</a></div>
+                <p><br>
+Видео и текстовая версия</p>
+                <p></p>
+                <p ><a href="/209">Задать вопрос</a></p>
+           	</div>
+        </div><!--inner-->
+    </div><!--wijet-->
+<div class="wijet mb_1_65 banner mobilehidden">
+
+  </div>
+    <table style="width: 100%;" border="0" cellspacing="5">
+<tbody>
+<tr>
+<td style="width: 50%; border: 1px solid #3399cc;" valign="top"><img style="float: left; margin: 5px;" src="assets/images/Faces/120.png" alt="" width="150" height="100" />
+<div class="title"><a href="?id=2459" target="_blank">Слово не воробей. Сергей Носов говорил мы записывали.Подборка ярких цитат главы города в 2013 году</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%;" border="0" cellspacing="5">
+<tbody>
+<tr>
+<td style="width: 50%; border: 1px solid #3399cc;" valign="top"><a href="?id=1579" target="_blank"></a><img style="float: left; margin: 5px;" src="assets/images/Faces/156.jpg" alt="" width="150" height="117" /><a href="?id=2171" target="_blank">
+</a>
+<div class="title"><a href="?id=2460" target="_blank">Тагильский депутат в центре скандала (ВИДЕО).&nbsp;
+<div class="subtitle mb_1" style="display: inline !important;"><span style="line-height: 1.5;">Владимир Гаёв дал комментарий АН </span>&laquo;Между строк&raquo;</div>
+</a>
+</div>
+<br />
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%;" border="0" cellspacing="5">
+<tbody>
+<tr>
+<td style="width: 50%; border: 1px solid #3399cc;" valign="top"><img style="float: left; margin: 5px;" src="assets/images/Faces/17.jpg" alt="" width="150" height="115" /><a href="?id=2109" target="_blank">
+</a>
+<div class="title">
+<div class="title"><a href="?id=2459" target="_blank">
+</a>
+<div class="title"><a href="?id=2459" target="_blank">Слово &ndash; не воробей. Сергей Носов говорил &ndash; мы записывали.&nbsp;
+<div class="subtitle mb_1" style="display: inline !important;">Подборка ярких цитат главы города в 2013 году</div>
+</a><a style="line-height: 1.5;" href="?id=2328" target="_blank">
+</a></div>
+<a href="?id=2328" target="_blank"></a></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%;" border="0" cellspacing="5">
+<tbody>
+<tr>
+<td style="width: 50%; border: 1px solid #3399cc;" valign="top"><a href="?id=1579" target="_blank"></a><img style="float: left; margin: 5px;" src="assets/images/zhkp/16.jpg" alt="" width="150" height="100" />
+<div class="title"><a href="?id=2452" target="_blank"> Жизнь как перфоманс. Молодые художники Нижнего Тагила в борьбе за искусство
+</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%;" border="0" cellspacing="5">
+<tbody>
+<tr>
+<td style="width: 50%; border: 1px solid #3399cc;" valign="top"><a href="?id=1579" target="_blank"></a><img style="float: left; margin: 5px;" src="assets/images/new_year/top15/677GEYA8JWI.jpg" alt="" width="150" height="75" />
+<div class="title"><a href="?id=2444" target="_blank">ТОП-15 материалов АН &laquo;Между строк&raquo; за 2013 год.&nbsp;<span style="line-height: 1.5;">Они вызывали дискуссию</span></a></div>
+<br />
+<div class="title">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%;" border="0" cellspacing="5">
+<tbody>
+<tr>
+<td style="width: 50%; border: 1px solid #3399cc;" valign="top"><img style="float: left; margin: 5px;" src="assets/images/Faces/154.jpg" alt="" width="150" height="113" />
+<div class="title"><a href="?id=2466" target="_blank">2013 год в лицах. Кто и чем запомнился нам в прошлом году?</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%;" border="0" cellspacing="5">
+<tbody>
+<tr>
+<td style="width: 50%; border: 1px solid #3399cc;" valign="top"><a href="?id=1579" target="_blank"></a><img style="float: left; margin: 5px;" src="assets/images/new_year/top15/677GEYA8JWI.jpg" alt="" width="150" height="75" /><a href="?id=2474" target="_blank">Тагил не для слабонервных. Подборка самых жутких случаев в городе за 2013 год</a><br />
+<div class="title">
+<div class="title">
+<div class="title">
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%;" border="0" cellspacing="5">
+<tbody>
+<tr>
+<td style="width: 50%; border: 1px solid #3399cc;" valign="top"><a href="?id=1579" target="_blank"></a><img style="float: left; margin: 5px;" src="assets/images/kashina/19.jpg" alt="" width="150" height="99" />
+<div class="title"><a href="?id=2495" target="_blank">От Натуси до Натальи. Из Тагила в Питер</a></div>
+<div class="title">
+<div class="title">
+<div class="title">
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+    <div class="wijet mb_1_65 mobilehidden">
+          <div class="inner">
+            <div class="txt">
+               <div class="linker">
+                 <table style="width: 300px" cellpadding="0" cellspacing="0"><tr style="vertical-align: top">
+                 <td style="width: 50%"><div id="oblakTag1"><a href="?id=16&tags=%D0%93%D0%BB%D0%B0%D0%B2%D0%B0+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0" class="s5">Глава города (142)</a><br><a href="?id=16&tags=%D0%93%D0%BE%D1%81%D0%B4%D1%83%D0%BC%D0%B0" class="s5">Госдума (16)</a><br><a href="?id=16&tags=%D0%95%D0%92%D0%A0%D0%90%D0%97" class="s5">ЕВРАЗ (23)</a><br><a href="?id=16&tags=%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3" class="s5">Екатеринбург (17)</a><br><a href="?id=16&tags=%D0%96%D0%9A%D0%A5" class="s5">ЖКХ (49)</a><br><a href="?id=16&tags=%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D0%BE%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5+%D1%81%D0%BE%D0%B1%D1%80%D0%B0%D0%BD%D0%B8%D0%B5" class="s5">Законодательное собрание (16)</a><br><a href="?id=16&tags=%D0%9D%D0%A2%D0%9C%D0%9A" class="s5">НТМК (8)</a><br><a href="?id=16&tags=%D0%9D%D0%B8%D0%B6%D0%BD%D0%B5%D1%82%D0%B0%D0%B3%D0%B8%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F+%D0%B4%D1%83%D0%BC%D0%B0" class="s5">Нижнетагильская городская дума (28)</a><br><a href="?id=16&tags=%D0%9F%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%BE%D0%B4" class="s4">Пригород (5)</a><br><a href="?id=16&tags=%D0%A1%D0%9C%D0%98" class="s5">СМИ (33)</a><br><a href="?id=16&tags=%D0%A2%D0%B0%D0%B3%D0%B8%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9+Weekend" class="s5">Тагильский Weekend (13)</a><br><a href="?id=16&tags=%D0%A3%D0%92%D0%97" class="s5">УВЗ (40)</a><br><a href="?id=16&tags=%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C" class="s5">безопасность (65)</a><br><a href="?id=16&tags=%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81" class="s5">бизнес (112)</a><br><a href="?id=16&tags=%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C" class="s5">благотворительность (34)</a><br><a href="?id=16&tags=%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82" class="s5">бюджет (86)</a><br><a href="?id=16&tags=%D0%B2%D0%B5%D1%82%D0%B5%D1%80%D0%B0%D0%BD%D1%8B" class="s4">ветераны (6)</a><br><a href="?id=16&tags=%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE" class="s5">видео (23)</a><br><a href="?id=16&tags=%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81+%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8" class="s5">вопрос недели (8)</a><br><a href="?id=16&tags=%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D1%8B" class="s5">выборы (8)</a><br><a href="?id=16&tags=%D0%B4%D0%B5%D1%82%D0%B8" class="s5">дети (141)</a><br><a href="?id=16&tags=%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%B8" class="s5">дороги (104)</a><br><a href="?id=16&tags=%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D0%B5" class="s5">животные (11)</a><br><a href="?id=16&tags=%D0%B7%D0%B0%D0%B4%D0%B0%D0%B9+%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81" class="s5">задай вопрос (14)</a><br><a href="?id=16&tags=%D0%B7%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D0%B5" class="s5">здоровье (67)</a><br><a href="?id=16&tags=%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D1%8C%D1%8E" class="s5">интервью (31)</a><br><a href="?id=16&tags=%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82" class="s5">интернет (32)</a><br><a href="?id=16&tags=%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0" class="s5">культура (180)</a><br><a href="?id=16&tags=%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D0%B0" class="s5">медицина (42)</a><br><a href="?id=16&tags=%D0%BC%D0%B8%D1%82%D0%B8%D0%BD%D0%B3" class="s5">митинг (9)</a><br><a href="?id=16&tags=%D0%BC%D1%83%D0%B7%D0%B5%D0%B9" class="s5">музей (46)</a><br><a href="?id=16&tags=%D0%BC%D1%83%D0%B7%D0%B5%D0%B9-%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4" class="s5">музей-завод (19)</a><br><a href="?id=16&tags=%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" class="s5">образование (40)</a><br><a href="?id=16&tags=%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE" class="s5">общество (594)</a><br><a href="?id=16&tags=%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0" class="s5">политика (126)</a><br><a href="?id=16&tags=%D0%BF%D1%80%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%82" class="s5">президент (27)</a><br><a href="?id=16&tags=%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82+%22%D0%94%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9+%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%22" class="s5">проект "Дорожный контроль" (29)</a><br><a href="?id=16&tags=%D0%BF%D1%80%D0%BE%D0%B8%D1%81%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F" class="s5">происшествия (207)</a><br><a href="?id=16&tags=%D1%80%D0%B5%D0%BB%D0%B8%D0%B3%D0%B8%D1%8F" class="s5">религия (27)</a><br><a href="?id=16&tags=%D1%81%D0%B5%D0%BC%D1%8C%D1%8F" class="s5">семья (32)</a><br><a href="?id=16&tags=%D1%81%D0%BB%D1%83%D1%85%D0%B8+%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8" class="s5">слухи недели (40)</a><br><a href="?id=16&tags=%D1%81%D0%BF%D0%BE%D1%80%D1%82" class="s5">спорт (95)</a><br><a href="?id=16&tags=%D1%81%D1%83%D0%B4" class="s5">суд (20)</a><br><a href="?id=16&tags=%D1%82%D0%B5%D0%B0%D1%82%D1%80" class="s5">театр (29)</a><br><a href="?id=16&tags=%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82" class="s5">транспорт (111)</a><br><a href="?id=16&tags=%D1%84%D0%B8%D0%BB%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D0%B8%D1%8F" class="s5">филармония (9)</a><br><a href="?id=16&tags=%D1%84%D0%BE%D1%82%D0%BE%D1%84%D0%B0%D0%BA%D1%82" class="s5">фотофакт (36)</a><br><a href="?id=16&tags=%D1%88%D0%BA%D0%BE%D0%BB%D1%8B" class="s5">школы (33)</a><br><a href="?id=16&tags=%D1%8D%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F" class="s5">экология (31)</a><br><a href="?id=16&tags=%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0" class="s5">экономика (69)</a><br></div></td>
+                 <td style="width: 50%"><div id="oblakTag2">&nbsp;</div></td></tr></table><br>
+                 <div class="clear"></div>
+               </div>
+               <script type="text/javascript">
+                  var oblakTag1 = document.getElementById("oblakTag1");
+                  var oblakTag2 = document.getElementById("oblakTag2");
+                  var oblakf = oblakTag1.innerHTML.split("<br>");
+                  var oblak1 = "";
+                  var oblak2 = ""; 
+                  for (var x = 0; x < oblakf.length; x++) {
+                        if(x < 20) oblak1 += oblakf[x] + "<br>";
+                        else oblak2 += oblakf[x] + "<br>";
+                  }
+                  oblakTag1.innerHTML = oblak1.substr(0, oblak1.length-4);
+                  oblakTag2.innerHTML = oblak2.substr(0, oblak2.length-4);
+               </script>
+          </div><!--inner-->
+</div><!--wijet-->
+</aside>
+<div class="clear"></div>
+</div><!--центральная часть и правый сайдбар-->
+</div><!--wrapper-->
+<div class="clear"></div>
+
+<footer>
+   <div class="inner">
+      <div id="info">
+         <div class="txt">
+            <img src="img/age.png" width="43" height="43">
+            <span>Материалы данного сайта содержат информацию, не предназначенную для несовершеннолетних</span>
+            <div class="clear"></div>
+            <div class="reginfo white_txt"> - </div>
+            При использовании материала или частичном цитировании, ссылка на Агентство новостей "Между строк" обязательна!
+            <!--LiveInternet counter--><script type="text/javascript"><!--
+               document.write("<a href='http://www.liveinternet.ru/click' "+
+               "target=_blank><img src='//counter.yadro.ru/hit?t14.2;r"+
+               escape(document.referrer)+((typeof(screen)=="undefined")?"":
+               ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+               screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+               ";"+Math.random()+
+               "' alt='' title='LiveInternet: показано число просмотров за 24"+
+               " часа, посетителей за 24 часа и за сегодня' "+
+               "border='0' width='88' height='31'><\/a>")
+               //--></script><!--/LiveInternet-->
+            <!-- Yandex.Metrika informer -->
+            <a href="http://metrika.yandex.ru/stat/?id=23490964&amp;from=informer"
+               target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/23490964/3_0_FFFFFFFF_FFFAFAFF_0_pageviews"
+               style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:23490964,lang:'ru'});return false}catch(e){}"/></a>
+            <!-- /Yandex.Metrika informer -->
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript">
+               (function (d, w, c) {
+                   (w[c] = w[c] || []).push(function() {
+                       try {
+                           w.yaCounter23490964 = new Ya.Metrika({id:23490964,
+                                   webvisor:true,
+                                   clickmap:true,
+                                   trackLinks:true,
+                                   accurateTrackBounce:true,
+                                   trackHash:true});
+                       } catch(e) { }
+                   });
+               
+                   var n = d.getElementsByTagName("script")[0],
+                       s = d.createElement("script"),
+                       f = function () { n.parentNode.insertBefore(s, n); };
+                   s.type = "text/javascript";
+                   s.async = true;
+                   s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+               
+                   if (w.opera == "[object Opera]") {
+                       d.addEventListener("DOMContentLoaded", f, false);
+                   } else { f(); }
+               })(document, window, "yandex_metrika_callbacks");
+            </script>
+            <noscript>
+               <div><img src="//mc.yandex.ru/watch/23490964" style="position:absolute; left:-9999px;" alt="" /></div>
+            </noscript>
+            <!-- /Yandex.Metrika counter -->
+         </div>
+         <div class="clear"></div>
+      </div>
+      <!--info-->
+      <div id="info_2">
+         <div class="bordur"></div>
+         <div class="txt">
+            <div class="title">Редакция</div>
+            тел.: +7 (3435) 46-88-99<br>
+            e-mail: <a href="mailto:news@mstrok.ru">news@mstrok.ru</a><br>
+            <br>
+            <a href="http://mstrok.ru/index.php?id=226"><img src="img/redak.jpg" width="174" height="38"></a>
+         </div>
+         <div class="clear"></div>
+      </div>
+      <!--info_2-->
+      <div id="info_3">
+         <div class="bordur"></div>
+         <div class="txt">
+            <div class="title">Отдел рекламы</div>
+            тел.:+7(922) 118-53-27	
+            <br>
+            e-mail: <a href="mailto:reklama@mstrok.ru">reklama@mstrok.ru</a><br>
+            <a href="http://mstrok.ru/index.php?id=225"><img src="img/footer_btn.png" width="174" height="38"></a>
+         </div>
+         <div class="clear"></div>
+      </div>
+      <!--info_3-->
+      <div class="clear"></div>
+      <div class="copy">Последние новости Нижнего Тагила сегодня, криминальные новости дня, происшествия, дтп<br>дизайн сайта: <a href="#">arven14</a></div>
+   </div>
+   <!--inner-->
+</footer>
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-39483980-1']);
+   _gaq.push(['_trackPageview']);
+   
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+   
+</script>
+</body>
+</html>

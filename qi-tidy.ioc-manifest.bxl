@@ -1,0 +1,6 @@
+﻿ref Qorpent.Integration.Tidy
+ref Qorpent.Core
+using Qorpent.Integration.Tidy
+using Qorpent.Serialization
+
+transient  "tidy.cleaner" TidyContentCleaner : IContentCleaner

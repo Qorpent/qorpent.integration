@@ -1,0 +1,6 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="..\qorpent.sys\install" />
+	<ItemGroup>
+		<Library Include="Qorpent.Integration.RuToken" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IsTest>True</IsTest>
+    <Configuration>Debug</Configuration>
+    <ProjectGuid>{48DB5DA5-7CB8-4AFC-B967-1D7DB10B9BBF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Qorpent.Integration.RuToken.Tests</RootNamespace>
+    <AssemblyName>Qorpent.Integration.RuToken.Tests</AssemblyName>
+    <AssemblyNameBase>Qorpent.Integration.RuToken</AssemblyNameBase>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="*.import" />
+    <None Include="*.export" />
+    <EmbeddedResource Include=".\**\*.*resource" />
+  </ItemGroup>
+  <Import Project="..\..\qorpent.kernel\build.targets" />
+</Project>

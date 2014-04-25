@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qorpent.Integration.Tidy", "Qorpent.Integration.Tidy\Qorpent.Integration.Tidy.csproj", "{2EB76FD7-0179-46FB-98F7-C0EBBBE6D040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qorpent.Integration.Tidy.Tests", "Qorpent.Integration.Tidy.Tests\Qorpent.Integration.Tidy.Tests.csproj", "{F5569290-791B-4D56-BB5A-306DDF9762F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{30EDDF50-4146-4389-9E7C-500A7A560113}"
+	ProjectSection(SolutionItems) = preProject
+		qi-tidy.install = qi-tidy.install
+		qi-tidy.build = qi-tidy.build
+		qi-tidy.ioc-manifest.bxl = qi-tidy.ioc-manifest.bxl
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TidyManaged", "..\TidyManaged\TidyManaged.csproj", "{D799633D-00EF-437C-B158-315557D930FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Qorpent_For_Resharper", "Qorpent_For_Resharper", "{89A54F0C-DDD3-4D0C-A636-377951062E3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qorpent.Core", "..\qorpent.sys\Qorpent.Core\Qorpent.Core.csproj", "{880F65EA-1A22-4672-A137-FFC91290A209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qorpent.Utils", "..\qorpent.sys\Qorpent.Utils\Qorpent.Utils.csproj", "{880F65EA-1A22-4672-A137-FFC912902112}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SQL2008|Any CPU = SQL2008|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EB76FD7-0179-46FB-98F7-C0EBBBE6D040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EB76FD7-0179-46FB-98F7-C0EBBBE6D040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EB76FD7-0179-46FB-98F7-C0EBBBE6D040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EB76FD7-0179-46FB-98F7-C0EBBBE6D040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EB76FD7-0179-46FB-98F7-C0EBBBE6D040}.SQL2008|Any CPU.ActiveCfg = SQL2008|Any CPU
+		{2EB76FD7-0179-46FB-98F7-C0EBBBE6D040}.SQL2008|Any CPU.Build.0 = SQL2008|Any CPU
+		{F5569290-791B-4D56-BB5A-306DDF9762F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5569290-791B-4D56-BB5A-306DDF9762F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5569290-791B-4D56-BB5A-306DDF9762F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5569290-791B-4D56-BB5A-306DDF9762F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5569290-791B-4D56-BB5A-306DDF9762F2}.SQL2008|Any CPU.ActiveCfg = SQL2008|Any CPU
+		{F5569290-791B-4D56-BB5A-306DDF9762F2}.SQL2008|Any CPU.Build.0 = SQL2008|Any CPU
+		{D799633D-00EF-437C-B158-315557D930FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D799633D-00EF-437C-B158-315557D930FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D799633D-00EF-437C-B158-315557D930FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D799633D-00EF-437C-B158-315557D930FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D799633D-00EF-437C-B158-315557D930FC}.SQL2008|Any CPU.ActiveCfg = Release|Any CPU
+		{D799633D-00EF-437C-B158-315557D930FC}.SQL2008|Any CPU.Build.0 = Release|Any CPU
+		{880F65EA-1A22-4672-A137-FFC91290A209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{880F65EA-1A22-4672-A137-FFC91290A209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{880F65EA-1A22-4672-A137-FFC91290A209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{880F65EA-1A22-4672-A137-FFC91290A209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{880F65EA-1A22-4672-A137-FFC91290A209}.SQL2008|Any CPU.ActiveCfg = SQL2008|Any CPU
+		{880F65EA-1A22-4672-A137-FFC91290A209}.SQL2008|Any CPU.Build.0 = SQL2008|Any CPU
+		{880F65EA-1A22-4672-A137-FFC912902112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{880F65EA-1A22-4672-A137-FFC912902112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{880F65EA-1A22-4672-A137-FFC912902112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{880F65EA-1A22-4672-A137-FFC912902112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{880F65EA-1A22-4672-A137-FFC912902112}.SQL2008|Any CPU.ActiveCfg = SQL2008|Any CPU
+		{880F65EA-1A22-4672-A137-FFC912902112}.SQL2008|Any CPU.Build.0 = SQL2008|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{880F65EA-1A22-4672-A137-FFC91290A209} = {89A54F0C-DDD3-4D0C-A636-377951062E3E}
+		{880F65EA-1A22-4672-A137-FFC912902112} = {89A54F0C-DDD3-4D0C-A636-377951062E3E}
+	EndGlobalSection
+EndGlobal

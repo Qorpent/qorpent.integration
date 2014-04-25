@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IsTest>True</IsTest>
+    <Configuration>Debug</Configuration>
+    <ProjectGuid>{D38A5DDE-BC02-4032-B80B-D8898D8A6D9F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Qorpent.TextExpert.ObjectFinder.Tests</RootNamespace>
+    <AssemblyName>Qorpent.TextExpert.ObjectFinder.Tests</AssemblyName>
+    <AssemblyNameBase>Qorpent.TextExpert.ObjectFinder</AssemblyNameBase>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="*.export" />
+    <EmbeddedResource Include=".\**\*.*resource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FioFilterTest.cs" />
+    <Compile Include="FioTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="..\..\qorpent.kernel\build.targets" />
+</Project>

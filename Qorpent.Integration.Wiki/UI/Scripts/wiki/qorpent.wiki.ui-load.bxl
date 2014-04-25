@@ -1,0 +1,10 @@
+pkg qorpent.wiki level=auth
+	uses libs
+	uses qorpent.core
+	
+    load qorpent.wiki.js
+    load qorpent.wiki.css
+    load qorpent.wiki.customrefs.js
+    load qorpent.wiki.menu.js
+    
+	

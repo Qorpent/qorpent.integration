@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IsTest>True</IsTest>
+    <Configuration>Debug</Configuration>
+    <ProjectGuid>{F5569290-791B-4D56-BB5A-306DDF9762F2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Qorpent.Integration.Tidy.Tests</RootNamespace>
+    <AssemblyName>Qorpent.Integration.Tidy.Tests</AssemblyName>
+    <AssemblyNameBase>Qorpent.Integration.Tidy</AssemblyNameBase>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include=".\**\*.*resource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TidyManaged\TidyManaged.csproj">
+      <Project>{d799633d-00ef-437c-b158-315557d930fc}</Project>
+      <Name>TidyManaged</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="badcontent\bf-1.htm" />
+    <EmbeddedResource Include="badcontent\e1-1.htm" />
+    <EmbeddedResource Include="badcontent\e1-2.htm" />
+    <EmbeddedResource Include="badcontent\jm-1.htm" />
+    <EmbeddedResource Include="badcontent\nr2-1.htm" />
+    <EmbeddedResource Include="badcontent\ved-1.htm" />
+    <EmbeddedResource Include="badcontent\vz-1.htm" />
+	<EmbeddedResource Include="badcontent\ved-ur.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BadContentAnalyzer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\dependency\libtidy.dll">
+      <Link>libtidy.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="badcontent\gz-1.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="..\..\qorpent.kernel\build.targets" />
+</Project>

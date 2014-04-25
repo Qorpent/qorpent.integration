@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration>Debug</Configuration>
+    <ProjectGuid>{42A46DE9-E8FA-4E4D-9962-FD59398CCDE5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Qorpent.TextExpert.ObjectFinder</RootNamespace>
+    <AssemblyName>Qorpent.TextExpert.ObjectFinder</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="*.export" />
+    <EmbeddedResource Include=".\**\*.*resource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SqlSupport\FioTransformerSqlFunctions.cs" />
+    <Compile Include="FioTransformerRule.cs" />
+    <Compile Include="FioTransformerRuleSet.cs" />
+    <Compile Include="FioTrasformerRuleType.cs" />
+    <Compile Include="FioSex.cs" />
+    <Compile Include="FioStructPart.cs" />
+    <Compile Include="FioTextParser.cs" />
+    <Compile Include="FioVariant.cs" />
+    <Compile Include="Padezh.cs" />
+    <Compile Include="FioTransformer.cs" />
+    <Compile Include="FioTransformerOptions.cs" />
+    <Compile Include="FioStruct.cs" />
+    <Compile Include="TextPosition.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="..\..\qorpent.kernel\build.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

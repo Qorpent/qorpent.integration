@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration>Debug</Configuration>
+    <ProjectGuid>{01B17933-9AA7-44C4-8BB7-66479780DEDB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Qorpent.Integration.YouTrack</RootNamespace>
+    <AssemblyName>Qorpent.Integration.YouTrack</AssemblyName>
+  </PropertyGroup>
+   <Import Project="..\..\qorpent.kernel\build.targets" />
+  
+  <ItemGroup>
+    <None Include="*.import" />
+    <None Include="*.export" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IssueRef.cs" />
+    <Compile Include="IYouTrackApiBase.cs" />
+    <Compile Include="IYouTrackAssignee.cs" />
+    <Compile Include="IYouTrackComment.cs" />
+    <Compile Include="IYouTrackConnectionDescriptor.cs" />
+    <Compile Include="IYouTrackField.cs" />
+    <Compile Include="IYouTrackGeneralIssueApi.cs" />
+    <Compile Include="IYouTrackGroup.cs" />
+    <Compile Include="IYouTrackIssue.cs" />
+    <Compile Include="IYouTrackTag.cs" />
+    <Compile Include="IYouTrackUser.cs" />
+    <Compile Include="IYouTrackModelElement.cs" />
+    <Compile Include="IYouTrackProtocolClient.cs" />
+    <Compile Include="YouTrackAdministrationApi.cs" />
+    <Compile Include="YouTrackAssignee.cs" />
+    <Compile Include="YouTrackConnection.cs" />
+    <Compile Include="YouTrackConnectionException.cs" />
+    <Compile Include="IgnoreResponse.cs" />
+    <Compile Include="IYouTrackAdministrationApi.cs" />
+    <Compile Include="IYouTrackAdministrationProjectApi.cs" />
+    <Compile Include="IYouTrackApi.cs" />
+    <Compile Include="IYouTrackConnectedBase.cs" />
+    <Compile Include="IYouTrackConnection.cs" />
+    <Compile Include="IYouTrackConnectionFactory.cs" />
+    <Compile Include="IYouTrackExportApi.cs" />
+    <Compile Include="IYouTrackGeneralApi.cs" />
+    <Compile Include="IYouTrackImportApi.cs" />
+    <Compile Include="IYouTrackProject.cs" />
+    <Compile Include="IYouTrackRequest.cs" />
+    <Compile Include="IYouTrackRequestFactory.cs" />
+    <Compile Include="IYouTrackResponse.cs" />
+    <Compile Include="IYouTrackResponseAdapter.cs" />
+    <Compile Include="YouTrackAdministrationProjectApi.cs" />
+    <Compile Include="YouTrackApiBase.cs" />
+    <Compile Include="YouTrackApiException.cs" />
+    <Compile Include="YouTrackConnectionFactory.cs" />
+    <Compile Include="YouTrackExceptionRegistry.cs" />
+    <Compile Include="YouTrackGeneralApi.cs" />
+    <Compile Include="YouTrackGeneralIssueApi.cs" />
+    <Compile Include="YouTrackGroup.cs" />
+    <Compile Include="YouTrackProject.cs" />
+    <Compile Include="YouTrackRequest.cs" />
+    <Compile Include="YouTrackRequestFactory.cs" />
+    <Compile Include="YouTrackResponse.cs" />
+    <Compile Include="YouTrackResponseAdapter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+</Project>

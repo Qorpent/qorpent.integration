@@ -1,0 +1,619 @@
+[ {
+"code" : "__module",
+"fullcode" : "__module",
+"prototype" : "__sys",
+"hash" : "+vpvfRVHpaxqJvKFDtFGbg==",
+"timestamp" : 440522680402.39111,
+"user" : "miawork\\comdiv",
+"host" : "MIAWORK"
+}, {
+"code" : "N133",
+"name" : "admin",
+"userport" : 449,
+"group" : "eco ecotest ecodev ecoadmin",
+"fullcode" : "ugmk.qlaud.N133",
+"prototype" : "node",
+"area" : "local",
+"localAddress" : "192.168.26.133",
+"remoteAddress" : "admin-assoi.ugmk.com",
+"resources" :  {
+	"code" : "main",
+	"ugmk.qlaud.cloudconfig" :  {
+		"name" : "cloudconfig",
+		"group" : "default",
+		"isconfig" : true,
+		"type" : "file",
+		"format" : "bslib",
+		"prototype" : "resource",
+		"embed" : 1
+		},
+	"ugmk.qlaud.ecoui" :  {
+		"group" : "eco ecotest pres ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.ecobin" :  {
+		"group" : "eco ecotest pres ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.ecousr" :  {
+		"group" : "eco ecotest pres ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.zefsui" :  {
+		"group" : "eco ecotest ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.zefsbin" :  {
+		"group" : "eco ecotest ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		}
+	},
+"services" :  {
+	"code" : "main",
+	"ugmk.qlaud.z3adm" :  {
+		"group" : "ecoadmin",
+		"type" : "z3adm",
+		"root" : "https://admin-assoi.ugmk.com:449/z3adm/",
+		"prototype" : "service",
+		"embed" : 1
+		},
+	"ugmk.qlaud.eco" :  {
+		"group" : "eco",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "oldeco",
+		"root" : "https://admin-assoi.ugmk.com:449/eco/"
+		},
+	"ugmk.qlaud.ecotest" :  {
+		"group" : "ecotest",
+		"landscape" : "t",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "oldeco",
+		"root" : "https://admin-assoi.ugmk.com:449/ecot/"
+		},
+	"ugmk.qlaud.ecodev" :  {
+		"group" : "ecodev",
+		"landscape" : "d",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "oldeco",
+		"root" : "https://admin-assoi.ugmk.com:449/ecod/"
+		},
+	"ugmk.qlaud.zefswork" :  {
+		"group" : "eco",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "zefs",
+		"root" : "https://admin-assoi.ugmk.com:449/zefs/"
+		},
+	"ugmk.qlaud.zefstest" :  {
+		"group" : "ecotest",
+		"landscape" : "t",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "zefs",
+		"root" : "https://admin-assoi.ugmk.com:449/zefst/"
+		}
+	}
+}, {
+"code" : "N132",
+"name" : "oper",
+"userport" : 447,
+"group" : "eco pres mongo",
+"fullcode" : "ugmk.qlaud.N132",
+"prototype" : "node",
+"area" : "local",
+"localAddress" : "192.168.26.132",
+"remoteAddress" : "assoi.ugmk.com",
+"resources" :  {
+	"code" : "main",
+	"ugmk.qlaud.cloudconfig" :  {
+		"name" : "cloudconfig",
+		"group" : "default",
+		"isconfig" : true,
+		"type" : "file",
+		"format" : "bslib",
+		"prototype" : "resource",
+		"embed" : 1
+		},
+	"ugmk.qlaud.ecoui" :  {
+		"group" : "eco ecotest pres ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.ecobin" :  {
+		"group" : "eco ecotest pres ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.ecousr" :  {
+		"group" : "eco ecotest pres ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.zefsui" :  {
+		"group" : "eco ecotest ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.zefsbin" :  {
+		"group" : "eco ecotest ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		}
+	},
+"services" :  {
+	"code" : "main",
+	"ugmk.qlaud.eco" :  {
+		"group" : "eco",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "oldeco",
+		"root" : "https://assoi.ugmk.com:447/eco/"
+		},
+	"ugmk.qlaud.ecopres" :  {
+		"group" : "pres",
+		"landscape" : "p",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "oldeco",
+		"root" : "https://assoi.ugmk.com:447/ecop/"
+		},
+	"ugmk.qlaud.zefswork" :  {
+		"group" : "eco",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "zefs",
+		"root" : "https://assoi.ugmk.com:447/zefs/"
+		},
+	"ugmk.qlaud.mongorepl" :  {
+		"type" : "mongodb",
+		"group" : "mongo",
+		"replicaset" : "zeta",
+		"isdefaultMongodb" : true,
+		"mongoport" : 28018,
+		"prototype" : "service",
+		"embed" : 1
+		}
+	}
+}, {
+"code" : "N49",
+"name" : "corp",
+"userport" : 448,
+"group" : "eco ecotest",
+"fullcode" : "ugmk.qlaud.N49",
+"prototype" : "node",
+"area" : "local",
+"localAddress" : "192.168.26.49",
+"remoteAddress" : "corp-assoi.ugmk.com",
+"resources" :  {
+	"code" : "main",
+	"ugmk.qlaud.cloudconfig" :  {
+		"name" : "cloudconfig",
+		"group" : "default",
+		"isconfig" : true,
+		"type" : "file",
+		"format" : "bslib",
+		"prototype" : "resource",
+		"embed" : 1
+		},
+	"ugmk.qlaud.ecoui" :  {
+		"group" : "eco ecotest pres ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.ecobin" :  {
+		"group" : "eco ecotest pres ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.ecousr" :  {
+		"group" : "eco ecotest pres ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.zefsui" :  {
+		"group" : "eco ecotest ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.zefsbin" :  {
+		"group" : "eco ecotest ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		}
+	},
+"services" :  {
+	"code" : "main",
+	"ugmk.qlaud.eco" :  {
+		"group" : "eco",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "oldeco",
+		"root" : "https://corp-assoi.ugmk.com:448/eco/"
+		},
+	"ugmk.qlaud.ecotest" :  {
+		"group" : "ecotest",
+		"landscape" : "t",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "oldeco",
+		"root" : "https://corp-assoi.ugmk.com:448/ecot/"
+		},
+	"ugmk.qlaud.zefswork" :  {
+		"group" : "eco",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "zefs",
+		"root" : "https://corp-assoi.ugmk.com:448/zefs/"
+		},
+	"ugmk.qlaud.zefstest" :  {
+		"group" : "ecotest",
+		"landscape" : "t",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "zefs",
+		"root" : "https://corp-assoi.ugmk.com:448/zefst/"
+		}
+	}
+}, {
+"code" : "N120",
+"name" : "invest",
+"userport" : 450,
+"group" : "e1 e1test",
+"fullcode" : "ugmk.qlaud.N120",
+"prototype" : "node",
+"area" : "local",
+"localAddress" : "192.168.26.120",
+"remoteAddress" : "invest-assoi.ugmk.com",
+"resources" :  {
+	"code" : "main",
+	"ugmk.qlaud.cloudconfig" :  {
+		"name" : "cloudconfig",
+		"group" : "default",
+		"isconfig" : true,
+		"type" : "file",
+		"format" : "bslib",
+		"prototype" : "resource",
+		"embed" : 1
+		}
+	},
+"services" :  {
+	"code" : "main"
+	}
+}, {
+"code" : "N119",
+"name" : "trade",
+"userport" : 451,
+"group" : "ecotest",
+"fullcode" : "ugmk.qlaud.N119",
+"prototype" : "node",
+"area" : "local",
+"localAddress" : "192.168.26.119",
+"remoteAddress" : "ugmk-trade.ugmk.com",
+"resources" :  {
+	"code" : "main",
+	"ugmk.qlaud.cloudconfig" :  {
+		"name" : "cloudconfig",
+		"group" : "default",
+		"isconfig" : true,
+		"type" : "file",
+		"format" : "bslib",
+		"prototype" : "resource",
+		"embed" : 1
+		},
+	"ugmk.qlaud.ecoui" :  {
+		"group" : "eco ecotest pres ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.ecobin" :  {
+		"group" : "eco ecotest pres ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.ecousr" :  {
+		"group" : "eco ecotest pres ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.zefsui" :  {
+		"group" : "eco ecotest ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		},
+	"ugmk.qlaud.zefsbin" :  {
+		"group" : "eco ecotest ecodev",
+		"prototype" : "resource",
+		"embed" : 1,
+		"type" : "directory"
+		}
+	},
+"services" :  {
+	"code" : "main",
+	"ugmk.qlaud.ecotest" :  {
+		"group" : "ecotest",
+		"landscape" : "t",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "oldeco",
+		"root" : "https://ugmk-trade.ugmk.com:451/ecot/"
+		},
+	"ugmk.qlaud.zefstest" :  {
+		"group" : "ecotest",
+		"landscape" : "t",
+		"prototype" : "service",
+		"embed" : 1,
+		"type" : "zefs",
+		"root" : "https://ugmk-trade.ugmk.com:451/zefst/"
+		}
+	}
+}, {
+"code" : "N114",
+"name" : "yt",
+"group" : "tracker deploy",
+"fullcode" : "ugmk.qlaud.N114",
+"prototype" : "node",
+"area" : "local",
+"localAddress" : "192.168.26.114",
+"remoteAddress" : "assoi-svn.ugmk.com",
+"resources" :  {
+	"code" : "main",
+	"ugmk.qlaud.cloudconfig" :  {
+		"name" : "cloudconfig",
+		"group" : "default",
+		"isconfig" : true,
+		"type" : "file",
+		"format" : "bslib",
+		"prototype" : "resource",
+		"embed" : 1
+		}
+	},
+"services" :  {
+	"code" : "main",
+	"ugmk.qlaud.youtrack" :  {
+		"type" : "tracker",
+		"group" : "tracker",
+		"sslport" : 8544,
+		"port" : 8089,
+		"localSecureRoot" : "https://192.168.26.114:8544/",
+		"localInSecureRoot" : "http://192.168.26.114:8089/",
+		"remoteRoot" : "https://assoi-svn.ugmk.com:8544/",
+		"prototype" : "service",
+		"embed" : 1
+		},
+	"ugmk.qlaud.teamcity" :  {
+		"type" : "continousintegration",
+		"group" : "deploy",
+		"sslport" : 8543,
+		"port" : 8088,
+		"localSecureRoot" : "https://192.168.26.114:8543/",
+		"localInSecureRoot" : "http://192.168.26.114:8088/",
+		"remoteRoot" : "https://assoi-svn.ugmk.com:8543/",
+		"prototype" : "service",
+		"embed" : 1
+		}
+	}
+}, {
+"code" : "N73",
+"name" : "git",
+"group" : "git",
+"fullcode" : "ugmk.qlaud.N73",
+"prototype" : "node",
+"area" : "local",
+"localAddress" : "192.168.26.73",
+"remoteAddress" : "assoi-git.ugmk.com",
+"resources" :  {
+	"code" : "main",
+	"ugmk.qlaud.cloudconfig" :  {
+		"name" : "cloudconfig",
+		"group" : "default",
+		"isconfig" : true,
+		"type" : "file",
+		"format" : "bslib",
+		"prototype" : "resource",
+		"embed" : 1
+		}
+	},
+"services" :  {
+	"code" : "main",
+	"ugmk.qlaud.mainrepos" :  {
+		"type" : "git",
+		"group" : "git",
+		"port" : 8601,
+		"method" : "https",
+		"prototype" : "service",
+		"embed" : 1
+		}
+	}
+}, {
+"code" : "N137",
+"name" : "sql",
+"group" : "sql",
+"fullcode" : "ugmk.qlaud.N137",
+"prototype" : "node",
+"area" : "local",
+"localAddress" : "192.168.26.137",
+"remoteAddress" : "admin-assoi.ugmk.com",
+"resources" :  {
+	"code" : "main",
+	"ugmk.qlaud.cloudconfig" :  {
+		"name" : "cloudconfig",
+		"group" : "default",
+		"isconfig" : true,
+		"type" : "file",
+		"format" : "bslib",
+		"prototype" : "resource",
+		"embed" : 1
+		}
+	},
+"services" :  {
+	"code" : "main",
+	"ugmk.qlaud.mainsql" :  {
+		"type" : "sql",
+		"group" : "sql",
+		"prototype" : "service",
+		"embed" : 1,
+		"database" :  [
+			 {
+				"code" : "eco"
+				},
+			 {
+				"code" : "e1"
+				},
+			 {
+				"code" : "mas"
+				}
+			]
+		}
+	}
+}, {
+"code" : "N37",
+"name" : "mongo",
+"group" : "mongo",
+"fullcode" : "ugmk.qlaud.N37",
+"prototype" : "node",
+"area" : "local",
+"localAddress" : "10.2.246.37",
+"resources" :  {
+	"code" : "main",
+	"ugmk.qlaud.cloudconfig" :  {
+		"name" : "cloudconfig",
+		"group" : "default",
+		"isconfig" : true,
+		"type" : "file",
+		"format" : "bslib",
+		"prototype" : "resource",
+		"embed" : 1
+		}
+	},
+"services" :  {
+	"code" : "main",
+	"ugmk.qlaud.mongorepl" :  {
+		"type" : "mongodb",
+		"group" : "mongo",
+		"replicaset" : "zeta",
+		"isdefaultMongodb" : true,
+		"mongoport" : 28018,
+		"prototype" : "service",
+		"embed" : 1
+		}
+	}
+}, {
+"code" : "D22",
+"name" : "MIAWORK",
+"group" : "dev",
+"fullcode" : "ugmk.qlaud.D22",
+"prototype" : "node",
+"area" : "local",
+"localAddress" : "10.2.246.22",
+"resources" :  {
+	"code" : "main",
+	"ugmk.qlaud.cloudconfig" :  {
+		"name" : "cloudconfig",
+		"group" : "default",
+		"isconfig" : true,
+		"type" : "file",
+		"format" : "bslib",
+		"prototype" : "resource",
+		"embed" : 1
+		}
+	},
+"services" :  {
+	"code" : "main"
+	}
+}, {
+"code" : "D02",
+"name" : "COMDIV",
+"group" : "dev",
+"fullcode" : "ugmk.qlaud.D02",
+"prototype" : "node",
+"area" : "local",
+"localAddress" : "10.2.246.2",
+"resources" :  {
+	"code" : "main",
+	"ugmk.qlaud.cloudconfig" :  {
+		"name" : "cloudconfig",
+		"group" : "default",
+		"isconfig" : true,
+		"type" : "file",
+		"format" : "bslib",
+		"prototype" : "resource",
+		"embed" : 1
+		}
+	},
+"services" :  {
+	"code" : "main"
+	}
+}, {
+"code" : "D03",
+"name" : "SALS",
+"group" : "dev",
+"fullcode" : "ugmk.qlaud.D03",
+"prototype" : "node",
+"area" : "local",
+"localAddress" : "10.2.246.3",
+"resources" :  {
+	"code" : "main",
+	"ugmk.qlaud.cloudconfig" :  {
+		"name" : "cloudconfig",
+		"group" : "default",
+		"isconfig" : true,
+		"type" : "file",
+		"format" : "bslib",
+		"prototype" : "resource",
+		"embed" : 1
+		}
+	},
+"services" :  {
+	"code" : "main"
+	}
+}, {
+"code" : "D15",
+"name" : "REMALLOC",
+"group" : "dev",
+"fullcode" : "ugmk.qlaud.D15",
+"prototype" : "node",
+"area" : "local",
+"localAddress" : "10.2.246.15",
+"resources" :  {
+	"code" : "main",
+	"ugmk.qlaud.cloudconfig" :  {
+		"name" : "cloudconfig",
+		"group" : "default",
+		"isconfig" : true,
+		"type" : "file",
+		"format" : "bslib",
+		"prototype" : "resource",
+		"embed" : 1
+		}
+	},
+"services" :  {
+	"code" : "main"
+	}
+}]

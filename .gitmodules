@@ -1,0 +1,3 @@
+[submodule "Qorpent.Integration.Wiki/UI/Scripts/bootstrap"]
+	path = Qorpent.Integration.Wiki/UI/Scripts/bootstrap
+	url = https://github.com/Qorpent/bootstrap.git

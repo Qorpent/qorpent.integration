@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IsTest>True</IsTest>
+    <Configuration>Debug</Configuration>
+    <ProjectGuid>{E30059CD-F546-4941-A156-2E7FAEF039A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>qorpent.integration.FusionChart.Tests</RootNamespace>
+    <AssemblyName>qorpent.integration.FusionChart.Tests</AssemblyName>
+    <AssemblyNameBase>qorpent.integration.FusionChart</AssemblyNameBase>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="*.import" />
+    <None Include="*.export" />
+    <EmbeddedResource Include=".\**\*.*resource" />
+  </ItemGroup>
+  <Import Project="..\..\qorpent.kernel\build.targets" />
+</Project>

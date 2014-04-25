@@ -1,0 +1,11 @@
+﻿ref Qorpent.Core
+ref Qorpent.Mvc
+ref Qorpent.Integration.RuToken
+
+using Qorpent.Mvc
+using Qorpent.Integration.RuToken
+
+mvc Qorpent.Integration.RuToken
+
+transient "RuToken.Storage" DirtyVersionUsersStorage : IRuTokenUsersStorage
+	TargetDirectory = '~/.tokenUsers'

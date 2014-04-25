@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IsTest>True</IsTest>
+    <Configuration>Debug</Configuration>
+    <ProjectGuid>{1C8FB3E4-38CF-4AD1-BB06-CAD42EBC5CEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Qorpent.Integration.YouTrack.Tests</RootNamespace>
+    <AssemblyName>Qorpent.Integration.YouTrack.Tests</AssemblyName>
+    <AssemblyNameBase>Qorpent.Integration.YouTrack</AssemblyNameBase>
+  </PropertyGroup>
+  <Import Project="..\..\qorpent.kernel\build.targets" />
+  <ItemGroup>
+    <None Include="*.import" />
+    <None Include="*.export" />
+  </ItemGroup>
+</Project>
